@@ -1,119 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>La Maleta Viajera</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="imagenes_practica html5\css\estilos.css" rel="stylesheet">
-</head>
-<header>
-    <div id="cabecera">
-        <img id="maleta" src="imagenes_practica html5\Imagenes/logo.gif">
-        <h1 id="titulo">La maleta viajera</h1>
-        <p id="diario">Mi diario de viaje</p>
-        <nav>
-            <div id="menu">
-                <div id="home">HOME</div>
-                <div id="blog">BLOG</div>
-                <div id="viajes">VIAJES</div>
-                <div id="contacto">CONTACTO</div>
+<html>
+    <head>
+        <title>PizzaDiPablo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="CSS\estilos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+        <script>
+            (function ($) {
+                $(function () {
+                    $('select').not('.disabled').formSelect();
+                });
+            })(jQuery); 
+        </script>
+    </head>
+    <body>
+        <header>
+             <div class="row">
+                 <div id="div1" class="col s12 push -s0">
+                    <h2>PizzaDiPablo</h2>
+                    <h4>Diviertase con nuestro creador de pizzas , y pruebe todo tipo de conbinaciones hasta la pizza con piña</h4>
+                 </div>
+        </header>
+        <article>
+            <form class="col s12">
+                <div class="row">
+                    <h6 id="h6">¿Lo mas importante que tipo de pizza , tamaño y masa quieres ?</h6>
+                    <div class="input-field col s2">
+                        <select>
+                            <option value="" disabled selected>Elige el tipo de Pizza</option>
+                            <input type="text" id="autocomplete-input" class="autocomplete">
+                            <label id="label2" for="autocomplete-input">Ponle un nombre si quieres</label>
+                        </select>
+                        <label id="label1">Tenemos el verdadero sabor de la pizza</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <select>
+                            <option value="" disabled selected>Elige el tamaño de la Pizza</option>
+                            <option value="1">Pequeña</option>
+                            <option value="2">Mediana</option>
+                            <option value="3">Familiar</option>
+                        </select>
+                        <label id="label1">Para disfrutar solo o en compañia</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <select>
+                            <option value="" disabled selected>Elige el tipo de Masa</option>
+                            <option value="1">Original</option>
+                            <option value="2">Queiso</option>
+                        </select>
+                        <label id="label1">Para aquellos amantes del auténtico sabor de la PizzaDiPablo </label>
+                    </div>
+                </div>
+            </form>
+            <div class="row ">
+                <div>
+                    <h6 id="h6">¿ Que salsa prefieres ?</h6>
+                    <div class="col s2">
+                        <label>
+                            <input name="group1" type="radio" checked />
+                            <span>Sin Salsa</span>
+                        </label>
+                    </div>
+                    <div class="col s2">
+                        <label>
+                            <input name="group1" type="radio" />
+                            <span>Salsa cremozza</span>
+                        </label>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </div>    
-</header>
-<div>
-    <img id="SF"src="imagenes_practica html5/Imagenes/sanfrancisco.jpg">
-    <p>refelxiones sobre mis vacaciones en EEUU</p>
-</div>
-<article<>
-    <div id="texto">
-        <img id="pinza" src="imagenes_practica html5\Imagenes\pin.png">
-        <h3>MI GRAN PASIÓN: VIAJAR</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-             elit. Hic pariatur ipsa quos esse eligendi, eum dolorem 
-             veniam provident voluptatem illum eius, repudiandae velit 
-             deleniti veritatis quibusdam minima, 
-            sequi fugiat exercitationem!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Hic pariatur ipsa quos esse eligendi, eum dolorem 
-                    veniam provident voluptatem illum eius, repudiandae velit 
-                    deleniti veritatis quibusdam minima, 
-                   sequi fugiat exercitationem!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Hic pariatur ipsa quos esse eligendi, eum dolorem 
-                        veniam provident voluptatem illum eius, repudiandae velit 
-                        deleniti veritatis quibusdam minima, 
-                       sequi fugiat exercitationem!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Hic pariatur ipsa quos esse eligendi, eum dolorem 
-                            veniam provident voluptatem illum eius, repudiandae velit 
-                            deleniti veritatis quibusdam minima, 
-                           sequi fugiat exercitationem!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-             elit. Hic pariatur ipsa quos esse eligendi, eum dolorem 
-             veniam provident voluptatem illum eius, repudiandae velit 
-             deleniti veritatis quibusdam minima, 
-            sequi fugiat exercitationem!</p>
-    </div>
-</article> 
-<aside>
-    <h3 id="tiempo">EL TIEMPO</h3>
-    <img id="flecha" src="imagenes_practica html5\Imagenes\arrow.png">
-    <div id="Redes">
-        <img id="meteo" src="imagenes_practica html5\Imagenes\Anotación 2019-12-02 222619.png">
-        <table id="logos">   
-            <td><img id="twitter" src="imagenes_practica html5\Imagenes\twitter.png"></td>
-            <td><img id="vimeo" src="imagenes_practica html5\Imagenes\vimeo.png"></td>
-            <td><img id="facebook" src="imagenes_practica html5\Imagenes\facebook.png"></td>
-            <td><img id="flickr" src="imagenes_practica html5\Imagenes\flickr.png"></td>
-        </table>
-    </div>
-</aside>  
-<footer>
-    <table>
-    <td id="ultimotweet">
-        <h3>MIS AMIGOS</h3>
-        <p>Hola desde San Francisco</p>
-        <div id="fecha" style="float:right;">
-                <script type="text/javascript">
-                //<![CDATA[
-                var  today = new Date();
-                var m = today.getMonth() + 1;
-                var mes = (m < 10) ? '0' + m : m;
-                  document.write('Fecha: '+today.getDate(),'/' +mes,'/'+today.getYear());
-                //]]> 
-                </script></div>  
-    </td>
-    <td id="fotos">
-        <h3>MIS FOTOGRAFIAS</h3>
-        <br>
-        <table id="fotos2">
-            <td><img src="imagenes_practica html5\Imagenes/pic1.jpg"></td>
-            <td><img src="imagenes_practica html5\Imagenes/pic2.jpg"></td>
-            <td><img src="imagenes_practica html5\Imagenes/pic3.jpg"></td>
-            <td><img src="imagenes_practica html5\Imagenes/pic4.jpg"></td>
-        </table>
-    </td>
-    <td id="amigos">
-        <h3>MI ULTIMO TWEET</h3>
-        <table>
-            <td>
-            <ul id="lista1">
-                <li>Taku</li>
-                <li>Masao</li>
-                <li>Morty</li>
-             </ul>
-            </td>
-            <td>
-            <ul id="lista2">
-                <li>Chorro</li>
-                <li>Rasero</li>
-              <li>Kuma</li>
-            </ul>
-        </td>
-        </table>
-    </td>
-    </table>
-</footer>
+            <div class="row ">
+                <div class="col s2">
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Salsa de Pesto</span>
+                    </label>
+                </div>
+                    <div class="col s2">
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Salsa de Tomate</span>
+                    </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row ">
+                <h6 id="h6">¿Cuánta mozzarela te apetece?</h6>
+                <form action="#">
+                    <label id="p2" class="col s2">Sin queso mozzarela</label>
+                    <label class="col s2">Queso 100% mozzarella</label>
+                    <label class="col s2">Extra de queso 100% mozzarella</label>
+                    <label class="col s3">Doble extra de queso 100% mozzarella</label>
+                    <p class="range-field">
+                        <input id="p1" type="range" id="test1" min="0" max="100" />
+                    </p>
+                </form>
+            </div>
+            <div>
+                <h6 id="h6">¿Qué ingredientes ponemos?</h6>
+                <div>
+                    <div class="row">
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/aceitunas.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/baconcrispy.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/pollobuffalo.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/anchoas.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Aceitunas negras</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Bacon Crispy</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Pollo Bufalo</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Anchoas</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/atun.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/bacon.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/cebolla.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/champinon.png">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Atún</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Bacon</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Cebolla</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Champiñon</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/jamon.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/jamon_serrano.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/maiz.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/pepperoni.png">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>York</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Jamón serrano</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Maíz</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+    
+                            <label>
+                                <input type="checkbox" />
+                                <span>Pepperoni</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/pimiento.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/pina.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/pollo.png">
+                        </div>
+                        <div class="col s2">
+                            <img class="responsive-img" src="./Imagenes/ternera.png">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Pimiento verde</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+    
+                            <label>
+                                <input type="checkbox" />
+                                <span>Piña</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Pollo a la parrilla</span>
+                            </label>
+                        </div>
+                        <div class="col s2">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Ternera especiada</span>
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row ">
+                        <div class="col s2">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div id="masa">
+                <img id="img-masa" src="Imagenes/masa.jpg">
+                <div>
+                    <div id="div3" class="input-field col s12">
+                        <input type="text" id="autocomplete-input" class="autocomplete">
+                        <label id="label2" for="autocomplete-input">Ponle un nombre si quieres</label>
+                    </div>
+                    <div>
+                        <h5>€10,20</h5> <button id="boton" class="btn modal-trigger">Añadir</button>
+                    </div>
+                    <label>I.V.A./I.G.C. y gastos de envio incluidos <br>Las promociones no seran aplicadas a domicilio , Solo se aplicaran en local</label>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <p></p>
+        </footer>
+    
+        </article>
+    </body>
 </html>
